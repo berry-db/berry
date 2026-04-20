@@ -1,0 +1,17 @@
+[versions]
+commons = "0.1.0"
+berry-parser = "0.1.0"
+gson = "2.13.2"
+
+berry-gradle = "0.1.0"
+shadow = "9.4.1"
+
+[plugins]
+commons = { id = "dev.lyranie.commons-gradle", version.ref = "commons" }
+berry = { id = "dev.lyranie.berry-gradle", version.ref = "berry-gradle" }
+shadow = { id = "com.gradleup.shadow", version.ref = "shadow" }
+
+[libraries]
+commons = { group = "dev.lyranie", name = "commons", version.ref = "commons" }
+berry-parser = { group = "dev.lyranie", name = "berry-parser", version.ref = "berry-parser" }
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }

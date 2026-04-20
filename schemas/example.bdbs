@@ -1,0 +1,14 @@
+database<Example> {
+    table<User> {
+        id:       number [primary]
+        username: string
+        email:    string
+        password: string
+    }
+
+    table<Post> {
+        id:       number [primary]
+        content:  string
+        authorId: number
+    }
+}
